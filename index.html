@@ -6,6 +6,8 @@
         <link rel="stylesheet" href="styles\test.css">
         <link rel="stylesheet" href="styles\reset.css">
         <link rel="stylesheet" href="styles\styles.css">
+        <link rel="stylesheet" href="styles\tablet.css">
+        <link rel="stylesheet" href="styles\mobile.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400&display=swap" rel="stylesheet">
@@ -81,35 +83,73 @@
                         <a class=all-projects href="/">Смотреть все проекты</a>
                     </div>
                 </section>
-                <!-- <section id="services" class="section-black">
+                <section id="services" class="section-black">
                     <div class="services_container">
                         <h2 class="services_title">УСЛУГИ</h2>
-                        <div class="service">
-                            <img src="resources\services\pencil_plan.png" alt="pencil_plan">
-                            <h3>Планировочное решение — от 2500₽/м²</h3>
+                        <div class="services_flexbox">
+                            <div class="service">                                
+                                <img class="service_img" src="resources\services\pencil_plan.png" alt="pencil_plan">
+                                <div class="service_price">от 2500₽/м²</div>
+                                <h3 class="service_name">Планировочное решение</h3>
+                            </div>
+                            <div class="service">
+                                <img src="resources\services\color_shades.png" alt="color_shades">
+                                <div class="service_price">от 3000₽/м²</div>
+                                <h3 class="service_name">Дизайн-проект</h3>
+                            </div>
+                            <div class="service">
+                                <img src="resources\services\plan_author.png" alt="plan_author">
+                                <div class="service_price">от 30 000₽/месяц</div>
+                                <h3 class="service_name">Авторский надзор</h3>
+                            </div>
+                            <div class="service">
+                                <img src="resources\services\warehouse.png" alt="warehouse">
+                                <div class="service_price">5% от стоимости</div>
+                                <h3 class="service_name">Комплектация</h3>
+                            </div>
                         </div>
-                        <div class="service">
-                            <img src="resources\services\color_shades.png" alt="color_shades">
-                            <h3>Дизайн-проект — от 3000₽/м²</h3>
+                        <button class="service_order_btn">Заказать услугу</button>
+                    </div>
+                </section>
+                <section>
+                    <div class="feedback_container">
+                        <h2 class="feedback_title">ОТЗЫВЫ</h2>
+                        <div class="row">
+                            <div class="col">
+                                <div class="feedback_content">
+                                    <h2 class="feedback_case_name">Ксения, проект 65 кв.м.</h2>
+                                    <p class="feedback_comment">
+                                        Хочу искренне поблагодарить Вас за работу, проделанную на высоком уровне! Нам с мужем было очень приятно с Вами работать! Спасибо за Ваше умение правильно слышать пожелания своих клиентов и выполнять работу, которая превосходит все ожидания! Мы даже не надеялись, что на 34 кв.м. кто-то сможет нам грамотно разместить все, что мы хотим и даже больше!<br><br>Вам удалось это просто превосходно! Нам лишь осталось воплотить красоту, которую Вы нам создали в жизнь и поделиться с Вами результатом!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="feedback_content">
+                                    <h2 class="feedback_case_name">Регина, проект 89 кв.м.</h2>
+                                    <p class="feedback_comment">
+                                        Спасибо большое за такой классный проект! Все стильно, круто, продумано! Очень приятно было с вами работать! Спасибо, что терпели наши «хочу это, хочу то» в поисках идеального для нас ремонта. Здорово, что мы нашли такого основательного, ответственного и внимательного к деталям дизайнера!<br><br>Хочется скорее реализовать проект и наслаждаться современной, функциональной и красивой квартирой! Будем рекомендовать Вас всем друзьям и знакомым!
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="service">
-                            <img src="resources\services\plan_author.png" alt="plan_author">
-                            <h3>Авторский надзор — от 30 000₽ в месяц</h3>
-                        </div>
-                        <div class="service">
-                            <img src="resources\services\warehouse.png" alt="warehouse">
-                            <h3>Комплектация — 5% от стоимости спецификации</h3>
+                        <div class="row">
+                            <div class="feedback_content">
+                                <h2 class="feedback_case_name">Яна, проект 120 кв.м.</h2>
+                                <p class="feedback_comment wide_size">
+                                    Хотелось бы сказать большое спасибо за проделанную работу! В задачу Марины входила разработка дизайн-проекта в минимальные сроки, и мне, конечно, не хотелось при этом потерять качество выполнения работы. Но волнения были напрасны: все вопросы решались оперативно, всегда предлагалось несколько вариантов решения, а также предоставлялись комментарии, какой способ решения будет более подходящим.<br><br>В итоге проект был сдан в оговоренный срок, и мне просто не терпится приступить к его реализации! Проект получился очень стильным и современным! Буду рекомендовать Вас тем, кому еще предстоит это непростое дело - ремонт!
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </section>
-                <section class="example-tworoom-flat">
+                <!-- <section class="example-tworoom-flat">
                     <div class="example-tworoom-flat-text-box">
                         <div class="example-tworoom-flat-text">
                             <h3>Проект Двухкомнатной квартиры в ЖК Лесной Пейзаж</h3>
                         </div>
                     </div>
-                </section>
-                <section id="contacts" class="contacts">
+                </section> -->
+                <!-- <section id="contacts" class="contacts">
                     <h2 class="contacts-title">КОНТАКТЫ</h2>
                     <div class="phone-number-box">
                         <a class="contacts-phone-number"href="tel:+79358954535">
