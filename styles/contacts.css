@@ -1,0 +1,148 @@
+.contacts {
+    max-width: 1400px;
+    padding-left: 125px;
+    padding-right: 125px;
+    margin-bottom: 160px;
+}
+
+.contacts-box {
+    display: flex;
+    justify-content:space-between;
+    gap: 30px;
+}
+
+.contacts-title {
+    margin-bottom: 32px;
+}
+
+.contacts-phone-number {
+    font-size: 60px;
+    line-height: 60px;
+    text-decoration: none;
+    color: #000;
+}
+
+.contacts-phone-number:hover  {
+    opacity: 0.5;
+}
+
+.phone-number-box:before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-bottom: 12px;
+    margin-left: -5px;
+    background-image: url("/resources/ic_outline-phone-iphone.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contacts-tg_link {
+    font-size: 60px;
+    line-height: 60px;
+    color: #121212;
+    text-decoration: none;
+}
+
+.contacts-tg_link:hover {
+    opacity: 0.5;
+}
+
+.tg_link-box {
+    width: 100%;
+}
+
+.tg_link-box:before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-bottom: 12px;
+    margin-left: -5px;
+    background-image: url("/resources/bxl_telegram.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (max-width: 960px) {
+    .contacts {
+        padding-left: 17px;
+        padding-right: 15px;
+        margin-bottom: 160px;
+
+    }
+    
+    .contacts-box {
+
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .contacts-title {
+        margin-bottom: 32px;
+    }
+    
+    .contacts-phone-number {
+        font-size: 45px;
+        line-height: 60px;
+        text-decoration: none;
+        color: #000;
+    }
+    
+    .contacts-phone-number:hover  {
+        opacity: 0.5;
+    }
+    
+    .contacts-tg_link {
+        font-size: 45px;
+        line-height: 60px;
+        color: #121212;
+        text-decoration: none;
+    }
+    
+    .contacts-tg_link:hover {
+        border-bottom: 2px solid #121212;
+        opacity: 0.5;
+    }
+    
+}
+
+@media (max-width: 426px) {
+    .contacts {
+        padding-left: 16px;
+        padding-right: 15px;
+        margin-bottom: 160px;
+    }
+    
+    .contacts-title {
+        margin-bottom: 32px;
+    }
+    
+    .contacts-phone-number {
+        font-size: 35px;
+        line-height: 46px;
+        text-decoration: none;
+        color: #000;
+    }
+    
+    .contacts-phone-number:hover  {
+        opacity: 0.5;
+    }
+    
+    .contacts-tg_link {
+        font-size: 35px;
+        line-height: 46px;
+        color: #121212;
+        text-decoration: none;
+    }
+    
+    .contacts-tg_link:hover {
+        border-bottom: 2px solid #121212;
+        opacity: 0.5;
+    }
+    
+}

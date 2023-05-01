@@ -1,0 +1,122 @@
+@import "/styles/header.css";
+@import "/styles/title.css";
+@import "/styles/about-us.css";
+@import "/styles/projects.css";
+@import "/styles/services.css";
+@import "/styles/popup.css";
+@import "/styles/feedback.css";
+@import "/styles/gallery.css";
+@import "/styles/contacts.css";
+@import "/styles/footer.css";
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+.body_fixed {
+    overflow: hidden;
+}
+
+section {
+    padding: 150px 0 0 0;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+a,
+p,
+div {
+    letter-spacing: -0.03em;
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 60px;
+    color: #121212;
+}
+
+h2 {
+    font-size: 18px;
+    line-height: 25px;
+    color: #121212;
+}
+
+h3 {
+    font-size: 30px;
+    line-height: 41px;
+    color: #121212;
+}
+
+p {
+    font-size: 20px;
+    line-height: 27px;
+}
+
+
+@media (max-width: 960px) {
+
+    .container {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    
+    h2 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    
+    h3 {
+        font-size: 25px;
+        line-height: 34px;
+    }
+    
+    section {
+        padding: 120px 0 0 0;
+    }
+
+}
+
+@media (max-width: 426px) {
+    .container {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 30px;
+        line-height: 32px;
+        color: #121212;
+    }
+    
+    h2 {
+        font-size: 14px;
+        line-height: 19px;
+        color: #121212;
+    }
+    
+    h3 {
+        font-size: 18px;
+        line-height: 25px;
+        color: #121212;
+    }
+    
+    p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    
+    section {
+        padding: 80px 0 0 0;
+        margin: 0 auto;
+    }
+}

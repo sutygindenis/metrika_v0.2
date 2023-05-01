@@ -1,0 +1,260 @@
+.gallery-container {
+    position: relative;
+}
+
+.gallery__title_wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-left: 125px;
+}
+
+.gallery__title {
+    position: absolute;
+    top: 60px;
+    z-index: 100;
+    font-size: 22px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.gallery__slides {
+    position: relative;
+    height: 717px;
+}
+
+.gallery__slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    margin-bottom: 20px;
+}
+
+.gallery__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.gallery__slide_title_box {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-left: 125px;
+}
+
+
+.gallery__slide__title_wrapper {
+    position: absolute;
+    max-width: 443px;
+    bottom: 60px;
+}
+
+.gallery__slide__title_wrapper h3 {
+    color:#FFFFFF; 
+}
+
+.gallery__slide_active {
+    opacity: 1;
+}
+
+.gallery__controls__wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-left: 125px;
+}
+
+.gallery__controls {
+    display: flex;
+    position: absolute;
+    bottom: 162px;
+    justify-content: flex-start;
+    gap: 14px;
+}
+
+.gallery__controls-prev {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.gallery__controls-prev-btn {
+    display: block;
+    background: none;
+}
+
+.gallery__controls-prev-btn:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.gallery__controls-next {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.gallery__controls-next-btn {
+    display: block;
+    background: none;
+}
+
+.gallery__controls-next-btn:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+@media (max-width: 960px) {
+
+    .gallery__title_wrapper {
+        padding-left: 16px;
+    }
+
+    .gallery__title {
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .gallery__slides {
+        height: 536px;
+    }
+
+    .gallery__slide {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        margin-bottom: 20px;
+    }
+
+    .gallery__slide img {
+        object-position: 50% 50%;
+    }
+
+    .gallery__slide__title-wrapper {
+        max-width: 377px;
+        bottom: 80px;
+        left: 50px;
+    }
+
+    .gallery__slide_active {
+        opacity: 1;
+    }
+
+    .gallery__controls__wrapper {
+        padding-left: 16px;
+        
+    }
+
+    .gallery__slide_title_box {
+        padding-left: 16px;
+    }
+
+    
+}
+
+@media (max-width: 426px) {
+    .gallery__title {
+        top: 61px;
+        left: 12px;
+        font-size: 14px;
+        line-height: 19px;
+    }
+    
+    .gallery__slides {
+        height: 408px;
+    }
+    
+    .gallery__slide {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .gallery__slide-active {
+        opacity: 1;
+    }
+
+
+
+    .gallery__slide__title_wrapper {
+        max-width: 287px;
+    }
+
+    .gallery__slide_title_box {
+        padding-left: 16px;
+    }
+
+    .gallery__controls {
+        display: flex;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+        gap: 0;
+        padding-left: 0;
+    }
+    
+    .gallery__controls-prev {
+        width: 36px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        
+    }
+    
+    .gallery__controls-prev-btn {
+        display: block;
+        background: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    .gallery__controls-prev-btn img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .gallery__controls-prev:hover {
+        cursor: pointer;
+        opacity: 0.5;
+    }
+    
+    .gallery__controls-prev-btn:hover {
+        cursor: pointer;
+    }
+    
+    .gallery__controls-next {
+        width: 36px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .gallery__controls-next-btn {
+        display: block;
+        background: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    .gallery__controls-next-btn img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .gallery__controls-next:hover {
+        cursor: pointer;
+        opacity: 0.5;
+    }
+    
+    .gallery__controls-next-btn:hover {
+        cursor: pointer;
+    }
+    
+}

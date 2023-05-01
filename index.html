@@ -3,11 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <title>Метрика</title>
-        <link rel="stylesheet" href="styles\test.css">
-        <link rel="stylesheet" href="styles\reset.css">
-        <link rel="stylesheet" href="styles\styles.css">
-        <link rel="stylesheet" href="styles\tablet.css">
-        <link rel="stylesheet" href="styles\mobile.css">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="styles\styles-tablet.css">
+        <link rel="stylesheet" href="styles\styles-mobile.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400&display=swap" rel="stylesheet">
@@ -15,17 +14,53 @@
     </head>
     <body>
         <div class="container">
-            <!-- <header>
-                <a href="/index.html" class="logo-link">
-                    <img class="logo" src="resources\main_logo.png" alt="logo_metrica">
-                </a>
+            <header>
+                <div class="header__box">
+                    <a href="/index.html" class="logo-link">
+                        <img class="logo" src="resources\main_logo.png" alt="logo_metrica">
+                    </a>
                     <nav>
                         <a href="#about_us" class="nav__link">О НАС</a>
                         <a href="#projects" class="nav__link">ПРОЕКТЫ</a>
                         <a href="#services" class="nav__link">УСЛУГИ</a>
                         <a href="#contacts" class="nav__link">КОНТАКТЫ</a>
                     </nav>
-            </header> -->
+                    <button class="js-burger-btn burger-btn">
+                        
+                    </button>
+                    <div class="js-burger burger">
+                        <div class="js-burger__content burger__content">
+                            <button class="js-burger-close-btn burger-close-btn"></button>
+                            <a href="/index.html" class="burger-logo">
+                                <img 
+                                    class="logo" 
+                                    src="resources\main_logo.png" 
+                                    alt="logo_metrica"
+                                >
+                            </a>
+                            <div class="burger-nav">
+                                <a href="#about_us" class="burger__link">О НАС</a>
+                                <a href="#projects" class="burger__link">ПРОЕКТЫ</a>
+                                <a href="#services" class="burger__link">УСЛУГИ</a>
+                                <a href="#contacts" class="burger__link">КОНТАКТЫ</a>
+                            </div>
+
+                            
+                            <div class="burger-contacts">
+                                <p class="burger-contacts_title">Для связи:</p>
+                                <a class="burger-phone-number"href="tel:+79358954535">
+                                    +7 935 895-45-35
+                                </a>
+                                <a class="burger-tg_link" href="https://t.me/suty_gin" target="_blank">
+                                    @suty_gin
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </header>
             <main>
                 <section class="title-box">
                     <div class="title-container-text">
@@ -52,29 +87,30 @@
                     <div class="projects_container">
                         <h2 class="projects_title">ПРОЕКТЫ</h2>
                         <div class="project">
-                                <img
-                                    class="project__image"
-                                    src="resources\projects\room_sofa_guitar.jpg"
-                                    alt="room_sofa_guitar">
+                            <img
+                                class="project__image"
+                                src="resources\projects\room_sofa_guitar.jpg"
+                                alt="room_sofa_guitar">
                             <h3 class="project__name">ЖК ПРАВОБЕРЕЖНЫЙ — 112 м² — 2023</h3>
                             <a href="/" class="project__more-info">
                                 <p>Подробнее →</p>
                             </a>
                         </div>
                         <div class="project">
-                                <img
-                                    class="project__image"
-                                    src="resources\projects\room_tv_table_sofa.jpg"
-                                    alt="room_tv_table_sofa">
+                            <img
+                                class="project__image modifier-position-first"
+                                src="resources\projects\room_tv_table_sofa.jpg"
+                                alt="room_tv_table_sofa">
                             <h3 class="project__name">ЖК НОРВЕЖСКИЙ ПАРК — 75 М² — 2023</h3>
                             <a href="/" class="project__more-info">
                                 <p>Подробнее→</p>
                             </a>
                         </div>
                         <div class="project">
-                                <img
-                                    class="project__image"
-                                    src="resources\projects\hall_kitchen_table_stair.jpg" alt="hall_kitchen_table_stair">
+                            <img
+                                class="project__image modifier-position-second"
+                                src="resources\projects\hall_kitchen_table_stair.jpg" 
+                                alt="hall_kitchen_table_stair">
                             <h3 class="project__name">ЖК СОСНОВСКИЕ ОЗЕРА — 94 М² — 2022</h3>
                             <a href="/" class="project__more-info">
                                 <p>Подробнее →</p>
@@ -99,7 +135,7 @@
                             </div>
                             <div class="service">
                                 <img src="resources\services\plan_author.png" alt="plan_author">
-                                <div class="service_price">от 30 000₽/месяц</div>
+                                <div class="service_price">от 30 000₽/мес</div>
                                 <h3 class="service_name">Авторский надзор</h3>
                             </div>
                             <div class="service">
@@ -108,7 +144,23 @@
                                 <h3 class="service_name">Комплектация</h3>
                             </div>
                         </div>
-                        <button class="service_order_btn">Заказать услугу</button>
+                        <button class="service_order_btn js-btn" >Заказать услугу</button>
+                        <div class="popup js-popup">
+                            <div class="popup_content js-popup__content">
+                                <div class="popup_header">
+                                    <h2 class="popup_title">Заказать услгугу</h2>
+                                    <p class="popup_description">Заполните форму, мы свяжемся с вами в течение суток</p>
+                                </div>
+                                <div class="popup_insert_data">
+                                    <input class="insert_data" placeholder="Имя">
+                                    <input class="insert_data" placeholder="Электронная почта">
+                                    <input class="insert_data" placeholder="Номер телефона">
+                                </div>
+                               
+                                <button class="popup_confirm_btn">Отправить</button>
+                                <button class="popup_close_btn js-popup__close-btn"></button>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <section>
@@ -142,27 +194,83 @@
                         </div>
                     </div>
                 </section>
-                <!-- <section class="example-tworoom-flat">
-                    <div class="example-tworoom-flat-text-box">
-                        <div class="example-tworoom-flat-text">
-                            <h3>Проект Двухкомнатной квартиры в ЖК Лесной Пейзаж</h3>
+                <section class="gallery">
+                    <div class="gallery-container">
+                        <div class="gallery__title_wrapper">
+                            <p class="gallery__title">ГАЛЕРЕЯ ПРОЕКТОВ</p>
                         </div>
-                    </div>
-                </section> -->
-                <!-- <section id="contacts" class="contacts">
-                    <h2 class="contacts-title">КОНТАКТЫ</h2>
-                    <div class="phone-number-box">
-                        <a class="contacts-phone-number"href="tel:+79358954535">
-                            +7 935 895-45-35
-                        </a>
-                    </div>
-                    <div class="email_link-box">
-                        <a class="contacts-email_link" href="mailto:hello@mail.com">
-                            hello@mail.com
-                        </a>
+                        <div class="gallery__slides">
+                            <div class="gallery__slide gallery__slide_active">
+                                <img src="/resources/gallery/bedroom-bed.jpg" alt="">
+                                <div class="gallery__slide_title_box">
+                                    <div class="gallery__slide__title_wrapper">
+                                        <h3>Проект Двухкомнатной квартиры в ЖК Лесной Пейзаж</h3>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="gallery__slide">
+                                <img src="/resources/gallery/yellow-chair.jpg" alt="">
+                                <div class="gallery__slide_title_box">
+                                    <div class="gallery__slide__title-wrapper">
+                                        <h3>Проект гостиной в ЖК Маяк</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gallery__slide">
+                                <img src="/resources/gallery/white-room.jpg" alt="">
+                                <div class="gallery__slide_title_box">
+                                    <div class="gallery__slide__title-wrapper">
+                                        <h3>Визуализация кухни-гостиной в частном доме</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gallery__slide"> 
+                                <img src="/resources/gallery/kitchen-wood.jpg" alt="">
+                                <div class="gallery__slide_title_box">
+                                    <div class="gallery__slide__title-wrapper">
+                                        <h3>Проект кухни в скандинавском стиле для ЖК Северный Ветер</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gallery__controls__wrapper">
+                                <div class="gallery__controls">
+                                    <div class="gallery__controls-prev">
+                                        <button class="gallery__controls-prev-btn">
+                                             <img src="/resources/gallery/icon-arrow-prev.png" alt="arrow-prev">
+                                        </button>
+                                    </div>
+                                    <div class="gallery__controls-next">
+                                        <button class="gallery__controls-next-btn">
+                                            <img src="/resources/gallery/icon-arrow-prev.png" alt="arrow-next">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                 </section>
-            </main>
+                <section id="contacts" class="contacts">
+                    <h2 class="contacts-title">КОНТАКТЫ</h2>
+                    <div class="contacts-box">
+                        <div class="phone-number-col">
+                            <div class="phone-number-box">
+                                <a class="contacts-phone-number"href="tel:+79358954535">
+                                    +7 935 895-45-35
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tg-link-col">
+                            <div class="tg_link-box">
+                                <a class="contacts-tg_link" href="https://t.me/suty_gin" target="_blank"> 
+                                    @suty_gin
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main> 
             <footer class="section-footer">
                     <div class="footer-ref-box">
                         <a href="#about_us" class="footer-ref">О НАС</a>
@@ -172,8 +280,11 @@
                     </div>
                     <div class="footer-design-by">
                         <p class="footer-design-by-text">Cтудия дизайна интерьера Метрика — 2023</p>
-                    </div> -->
+                    </div> 
             </footer>
         </div>
+        <script src="/popup.js"></script>
+        <script src="/gallery.js"></script>
+        <script src="/burger.js"></script>
     </body>
 </html>

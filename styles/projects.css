@@ -1,0 +1,150 @@
+.projects_container {
+    padding: 0px 125px 0 125px;
+    max-width: 1400px;
+    max-height: 2122px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+
+.projects_title {
+    margin-bottom: 30px;
+}
+
+.project {
+    height: 548px;
+    margin-bottom: 90px;
+}
+
+.project__image {
+    height: 450px;
+    object-fit: cover;
+    object-position: 50% 94%;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.modifier-position-first {
+    object-position: 50% 50%;
+}
+
+.modifier-position-second {
+    object-position: 50% 67%;
+}
+
+.project__name {
+    margin-bottom: 15px;
+}
+
+.project__more-info {
+    color: #AD1818;
+    text-decoration: none;
+}
+
+.all-projects {
+    display:block;
+    width: 100%;
+    height: 153px;
+    font-size: 30px;
+    line-height: 153px;
+    text-align: center;
+
+    border: 1px solid #AD1818;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #FFFFFF;
+    color: #AD1818;
+}
+
+.all-projects:hover {
+    background-color: #AD1818;
+    color: #FFFFFF;
+}
+
+@media (max-width: 960px) {
+    .projects_container {
+        padding: 0 15px 0 17px;
+        width: 100%;
+        height: auto;
+        margin-bottom: 102px;
+    }
+    
+    .projects_title {
+        margin-left: 0;
+    }
+    
+    .project {
+        width: 100%;
+        height: auto;
+        margin-bottom: 80px;
+    }
+    
+    .project:last-child {
+        margin-bottom: 0;
+    }
+
+    .project__image {
+        min-height: 450px;
+    }
+    
+    .project img {
+        object-fit: cover;
+        object-position: 50% 98%;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .project__name {
+        margin-bottom: 10px;
+    }
+    
+    .all-projects {
+        margin-top: 102px;
+    }
+}
+
+@media (max-width: 426px) {
+    .projects_container {
+        padding: 0px 12px 0 12px;
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    
+    .projects_title {
+        margin-left: 1px;
+        margin-bottom: 20px;
+    }
+    
+    .project {
+        max-height: 250px;
+        margin-bottom: 20px;
+        max-height: 328px;
+        margin-bottom: 49px;
+    }
+    
+    .project__image {
+        width: 100%;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+    
+    .project img {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .project__name {
+        margin-bottom: 11px;
+    }
+    
+    .project__more-info {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    
+    .all-projects {
+        height: 100px;
+        font-size: 22px;
+        line-height: 100px;
+        margin: 60px 0 144px 0;
+    }
+}
