@@ -33,7 +33,7 @@
     height: 24px;
     margin-bottom: 12px;
     margin-left: -5px;
-    background-image: url("/resources/ic_outline-phone-iphone.png");
+    background-image: url("./resources/ic_outline-phone-iphone.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -61,7 +61,7 @@
     height: 24px;
     margin-bottom: 12px;
     margin-left: -5px;
-    background-image: url("/resources/bxl_telegram.png");
+    background-image: url("./resources/bxl_telegram.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
