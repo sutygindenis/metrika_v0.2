@@ -123,6 +123,7 @@
     
     .project__image {
         width: 100%;
+        min-height: 0;
         height: 250px;
         margin-bottom: 20px;
     }
