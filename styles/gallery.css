@@ -43,7 +43,6 @@
     padding-left: 125px;
 }
 
-
 .gallery__slide__title_wrapper {
     position: absolute;
     max-width: 443px;
@@ -146,7 +145,6 @@
 
     .gallery__controls__wrapper {
         padding-left: 16px;
-        
     }
 
     .gallery__slide_title_box {
@@ -156,7 +154,7 @@
     
 }
 
-@media (max-width: 426px) {
+@media (max-width: 520px) {
     .gallery__title {
         top: 61px;
         left: 12px;
@@ -179,14 +177,16 @@
         opacity: 1;
     }
 
-
-
     .gallery__slide__title_wrapper {
         max-width: 287px;
     }
 
     .gallery__slide_title_box {
         padding-left: 16px;
+    }
+
+    .gallery__controls__wrapper {
+        padding-left: 0;
     }
 
     .gallery__controls {

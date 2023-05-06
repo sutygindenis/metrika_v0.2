@@ -87,7 +87,7 @@ p {
 
 }
 
-@media (max-width: 426px) {
+@media (max-width: 520px) {
     .container {
         width: 100%;
     }

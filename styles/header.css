@@ -216,7 +216,7 @@ nav {
 
 }
 
-@media (max-width: 426px) {
+@media (max-width: 520px) {
     header {
         width: 100%;
     }

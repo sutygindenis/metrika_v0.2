@@ -109,7 +109,25 @@
     }
 }
 
-@media (max-width: 426px) {
+/* @media (max-width: 600px) {
+    .services_flexbox {
+        flex-direction: column;
+    }
+
+    .service {
+        width: 100%;
+    }
+
+    .service_order_btn {
+        min-width: 100%;
+        font-size: 22px;
+        height: 100px;
+        border-radius: 3.8px;
+        margin-top: 60px;
+    }
+} */
+
+@media (max-width: 520px) {
 
     .section-black {
         padding-bottom: 80px;

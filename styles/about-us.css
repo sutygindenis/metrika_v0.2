@@ -49,6 +49,7 @@
     .about_us_container {
         width: 75%;
         height: auto;
+        min-height: 0;
         padding: 0px 15px 0 17px;
         margin: 0;
     }
@@ -61,13 +62,13 @@
     }
 }
 
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
     .about_us_container {
         width: 100%;
     }
-}
+} */
 
-@media (max-width: 426px) {
+@media (max-width: 520px) {
     .about_us_container {
         width: 100%;
         padding: 0px 17px 0 12px;

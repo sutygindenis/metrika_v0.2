@@ -56,10 +56,10 @@
 
 }
 
-@media (max-width: 426px) {
+@media (max-width: 520px) {
     .title-box {
         padding: 0 12px 0 13px;
-        max-height: 424px;
+        /* max-height: 424px; */
     }
     
     .title-container-text {
