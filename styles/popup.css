@@ -88,6 +88,7 @@
     right: 34px;
     font-size: 20px;
     background-image: url('../resources/radix-icons_cross-2.jpg');
+    cursor: pointer;
 }
 
 @media (max-width: 1024px) {
