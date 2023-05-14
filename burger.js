@@ -24,4 +24,5 @@ function toggleBurger() {
     burgerNode.classList.toggle(BURGER_OPENED_CLASSNAME);
     bodyNodeBurger.classList.toggle(BODY_FIXED_CLASSNAME_2);
     burgerBtnOpenNode.classList.toggle(BURGER_BTN_OPENED_CLASSNAME);
+    burgerBtnCloseNode.classList.toggle(BURGER_BTN_OPENED_CLASSNAME);
 }
