@@ -1,4 +1,4 @@
-.section-footer {
+.footer {
     padding: 60px 0 30px 0;
     background-color: #121212;
 }
@@ -49,7 +49,7 @@
 }
 
 @media (max-width: 426px) {
-    .section-footer {
+    .footer {
         padding: 30px 0 26px 0;
     }
     

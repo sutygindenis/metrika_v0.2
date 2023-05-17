@@ -14,6 +14,11 @@ nav {
     gap: 60px;
 }
 
+.ul-inline {
+    display: inline-flex;
+    gap: 60px;
+}
+
 .logo {
     display: block;
     width: 127px;
